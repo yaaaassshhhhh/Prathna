@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>study</title>
+    <style>
+        body {
+            font-family: "DM Serif Display", serif;
+            font-weight: 600; /* This makes the text bold */
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;;
+        }
+
+        header {
+            background-color: #714a9c;
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+        }
+
+        header img {
+            max-width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .subject-button {
+            text-align: center;
+            margin: 2%;
+            width: 29%;
+            cursor: pointer;
+            border: 2px solid #333;
+            border: linear-gradient(180deg,
+            rgb(249, 70, 100),
+            orange,
+            rgb(244, 43, 244));
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            cursor: pointer;
+            
+        }
+
+        .subject-button:hover {
+            transform: scale(1.1);
+            border-radius: 20px;
+            box-shadow: 0px 0px 100px black
+        }
+
+        .subject-button img {
+            display: block; /* Ensures the image is centered properly */
+            margin: 0 auto; /* Centers the image horizontally */
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #60427d;
+            color: white
+        ;  
+      }
+
+    </style>
+<link rel="icon" href="C:\study\foxbg.png" type="image/png" sizes="16x16 62x62">
+
+</head>
+<body>
+
+   <header>
+        <div>
+            <img src="fox1.png" alt="Logo">
+        </div>
+        <p>Welcome to the new way of studying</p>
+    </header>
+
+    <main>
+        
+        <div class="subject-button" onclick="navigate('physics')">
+            <img src="physics.png" alt="Physics">
+            <p>Physics </p> 
+        </div>
+        </div>
+        <div class="subject-button" onclick="navigate('chemistry')">
+            <img src="Chemistry.png" alt="Chemistry">
+            <p>Chemistry</p>
+        </div>
+
+        <div class="subject-button" onclick="navigate('math')">
+            <img src="Maths.png" alt="Math">
+            <p>Math</p>
+        </div>
+    </main>
+
+     <footer>
+        <p style="text-align: center;">Yash Vinchhi</p>
+        <div style="text-align: center;">
+          <a href="https://www.instagram.com/yeaas_vinchhi/" target="_blank">
+        <img src="instagram.svg" alt="Instagram" style="width: 50px; height: 50px;">
+    </a>
+           <a href=https://www.linkedin.com/in/yash-h-vinchhi-25176b297/" target="_blank">
+        <img src="linkedin.svg" alt="linkedin" style="width: 50px; height: 50px;">
+    </a>
+             <a href="https://twitter.com/yashhvinchhi" target="_blank">
+        <img src="twitter.svg" alt="twitter" style="width: 50px; height: 50px;">
+    </a>
+        </div>
+    </footer>
+
+    <script>
+        function navigate(subject) {
+            window.location.href = subject + '.html';
+        }
+    </script>
+
+</body>
+</html>

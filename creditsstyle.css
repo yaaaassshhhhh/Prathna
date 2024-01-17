@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Replaced Talampas with a generic sans-serif font */
+    background-color: #ffffff; /* Header and footer color changed to #ff4500 */
+}
+
+a {
+    color: white;
+    text-decoration: none; /* Remove underline from all hyperlinks */
+}
+
+header {
+    background-color: #ff4500; /* Header color changed to #ff4500 */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 40%;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.grid-item a {
+    text-decoration: none; /* Remove underline from links inside grid items */
+}
+
+.grid-item a img {
+    border: none; /* Remove the border around linked images */
+}
+
+.video-thumbnail {
+    width:400px;
+    height:300px; /* Maintain aspect ratio */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-thumbnail:hover{
+    transform:scale(1.1);
+    box-shadow: 0 0 90px rgb(0, 0, 0);
+}
+
+.video-container, .credits-container {
+    margin: 20px;
+}
+
+
+footer {
+    background-color: #ff4500; /* Footer color changed to #ff4500 */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bold;
+    padding: 1px;
+    border: 10px solid #046a38;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 9%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 30%;
+    height:15%;
+}
+
+.grid-container {
+    display: flex; /* Use flexbox to make items side by side */
+    justify-content: space-around; /* Adjust as needed */
+}
+
+.grid-item {
+    text-align: center;
+    margin: 10px;
+}
+
