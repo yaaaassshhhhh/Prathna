@@ -38,6 +38,7 @@ body {
   
   header a:hover {
     background-color: #ffffff;
+    transition: .5s;
   }
   
   .video-container {
